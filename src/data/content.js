@@ -6,7 +6,6 @@ export const profile = {
   location: "Odisha, India",
   meta: ["Odisha, India", "B.Tech CSE · KIIT"],
   email: "23052363@kiit.ac.in",
-  phone: "+91 93487 18730",
   linkedin: "https://www.linkedin.com/in/tanmaya-dwivedy-b0b4a1325/",
   github: "https://github.com/tanmayadwivedy0820",
   resume: "/assets/resume.pdf",

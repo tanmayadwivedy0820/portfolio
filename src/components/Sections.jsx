@@ -36,11 +36,6 @@ export function Projects() {
           <div className="project-body">
             <h3>{p.title}</h3>
             <p>{p.body}</p>
-            {p.metrics && (
-              <div className="metrics">
-                {p.metrics.map((m) => <span key={m} className="metric">{m}</span>)}
-              </div>
-            )}
             <div className="tags">
               {p.tags.map((t) => <span key={t}>{t}</span>)}
             </div>
@@ -83,7 +78,6 @@ export function Education() {
 export function Contact() {
   const rows = [
     ["Email", profile.email, `mailto:${profile.email}`],
-    ["Phone", profile.phone, `tel:${profile.phone.replace(/\s/g, "")}`],
     ["LinkedIn", profile.linkedin === "#" ? "Add your LinkedIn URL" : profile.linkedin, profile.linkedin],
     ["GitHub", profile.github === "#" ? "Add your GitHub URL" : profile.github, profile.github],
   ];
