@@ -39,6 +39,24 @@ export const projects = [
   },
   {
     id: "P2",
+    title: "KIIT Mental Health System — RAG Subsystem",
+    body:
+      "A full-stack student mental-health screening platform built as a team project, where I designed and implemented the Retrieval-Augmented Generation subsystem. Built the ingestion, embedding, and retrieval pipeline: chunking a curated knowledge base, embedding it into a pgvector store, and retrieving the most relevant passages at query time to ground the system's support responses in vetted material. (Frontend, auth, and clinical logic were built by teammates.)",
+    metrics: ["Designed the RAG pipeline", "pgvector retrieval", "Grounded LLM responses"],
+    tags: ["RAG", "pgvector", "TypeScript", "Node.js", "Embeddings"],
+    link: "https://github.com/tanmayadwivedy0820/kiit-mental-health-system",
+  },
+  {
+    id: "P3",
+    title: "RAG Document Q&A",
+    body:
+      "A retrieval-augmented generation pipeline that answers natural-language questions over your own documents (PDF, Word, Excel, CSV, and more). Documents are loaded, chunked, and embedded with SentenceTransformers, then stored in a FAISS vector index. At query time the most relevant chunks are retrieved via cosine similarity and passed to a Groq-hosted LLM to generate a grounded answer. Built end-to-end as a solo project.",
+    metrics: ["Multi-format ingestion", "FAISS similarity search", "Groq LLM generation"],
+    tags: ["Python", "LangChain", "FAISS", "SentenceTransformers", "Groq"],
+    link: "https://github.com/tanmayadwivedy0820/rag-document-qa",
+  },
+  {
+    id: "P4",
     title: "House Price Prediction System",
     body:
       "A regression-based ML application predicting housing prices from structured real-estate data. Performed EDA with Matplotlib and Seaborn, built a robust preprocessing pipeline (ColumnTransformer, One-Hot Encoding, Standard Scaling, Simple Imputer), and selected the best model using MAE, RMSE, and R². Applied cross-validation and hyperparameter tuning to improve generalization.",
@@ -47,7 +65,7 @@ export const projects = [
     link: "https://github.com/tanmayadwivedy0820/house-price-prediction",
   },
   {
-    id: "P3",
+    id: "P5",
     title: "Customer Churn Prediction System",
     body:
       "A supervised model predicting customer churn from behavioral and usage data. Handled class imbalance with SMOTE, engineered features, and evaluated models with 5-fold cross-validation. Compared multiple classification algorithms and finalized an optimized Random Forest classifier to support data-driven retention strategies.",
